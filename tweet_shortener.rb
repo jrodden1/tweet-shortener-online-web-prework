@@ -80,11 +80,11 @@ def bulk_tweet_shortener(multiTweetArray)
 end
 
 def selective_tweet_shortener(multiTweetArray)
-  multiTweetArray.map do |tweet|
+  outputTweet = ""
+  multiTweetArray.map.with_index do |tweet, index|
     if tweet.length > 139
-      puts word_substituter(tweet)
-    else
-      puts tweet
+      outputTweet = word_substituter(tweet)
+      multiTweetArray[index] = outputTweet
     end
   end
 end
