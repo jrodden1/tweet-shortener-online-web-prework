@@ -88,7 +88,7 @@ def selective_tweet_shortener(singleTweet)
   outputTweet
 end
 
-def shortened_tweet_truncator(multiTweetArray)
+def shortened_tweet_truncator(singleTweet)
   if singleTweet.length > 139
     outputTweet = word_substituter(singleTweet)
     if outputTweet.length > 139
