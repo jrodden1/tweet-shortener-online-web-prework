@@ -89,15 +89,14 @@ def selective_tweet_shortener(singleTweet)
 end
 
 def shortened_tweet_truncator(multiTweetArray)
-  multiTweetArray.map.with_index do |tweet, index|
-    if tweet.length > 139
-      shortenedTweet = word_substituter(tweet)
-      if shortenedTweet.length > 139
-        shortenedTweet = shortenedTweet[0..136] + "..."
-      end
-      puts shortenedTweet
-    else
-      puts tweet
+  if singleTweet.length > 139
+    outputTweet = word_substituter(singleTweet)
+    if outputTweet.length > 139
+      outputTweet = outputTweet[0..136] + "..."
     end
+  else
+    outputTweet = singleTweet
   end
+outputTweet
 end
+
