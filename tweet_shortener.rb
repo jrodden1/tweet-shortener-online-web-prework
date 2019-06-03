@@ -52,3 +52,9 @@ def word_substituter(tweet)
   finishedTweet = tweetArr.join(" ")
   finishedTweet
 end
+
+def bulk_tweet_shortener(mulitiTweetArray)
+  mulitiTweetArray.each do |tweet|
+    puts word_substituter(tweet)
+  end
+end
