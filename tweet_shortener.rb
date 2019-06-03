@@ -31,6 +31,8 @@ def dictionary(word)
   when "and"
     output_word = "&"
     puts "#{word} was changed to #{output_word}."
+  else
+    puts "#{word} was NOT changed.  It is not in the dictionary"
   end
   output_word
 end
