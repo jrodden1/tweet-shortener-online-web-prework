@@ -39,9 +39,10 @@ end
 
 def word_substituter(tweet)
   finishedTweet = ""
-  tweetArr = tweet.split(" ")
+  tweetArr = tweet.split /\s|'|,/
   tweetArr.map do |word|
     #is the word in the dictionary?  I'm testing for the blank output of the #dictionary method which means the word is not in the dictionary and nothing can be done to it.
     if dictionary(word) != ""
   end
+  finishedTweet
 end
