@@ -39,5 +39,5 @@ end
 
 def word_substituter(tweet)
   tweetArr = tweet.to_a
-  
+
 end
