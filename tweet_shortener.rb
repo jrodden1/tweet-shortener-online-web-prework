@@ -38,6 +38,6 @@ def dictionary(word)
 end
 
 def word_substituter(tweet)
-  tweetArr = tweet.to_a
+  tweetArr = tweet.split(" ")
 
 end
