@@ -1,14 +1,36 @@
-def dictionary
-  words-to-be-substituted = {
-    "hello" => "hi",
-    "to" => "2",
-    "two" => "2",
-    "too" => "2",
-    "for" => "4",
-    "four" => "4",
-    "be" => "b",
-    "you" => "u",
-    "at" => "@",
-    "and" => "&"
-  }
+def dictionary(word)
+  output_word = ""
+  case word
+  when "hello"
+    output_word = "hi"
+    puts "#{word} was changed to #{output_word}."
+  when "to"
+    output_word = "2"
+    puts "#{word} was changed to #{output_word}."
+  when "two"
+    output_word = "2"
+    puts "#{word} was changed to #{output_word}."
+  when "too"
+    output_word = "2"
+    puts "#{word} was changed to #{output_word}."
+  when "for"
+    output_word = "4"
+    puts "#{word} was changed to #{output_word}."
+  when "four"
+    output_word = "4"
+    puts "#{word} was changed to #{output_word}."
+  when "be"
+    output_word = "b"
+    puts "#{word} was changed to #{output_word}."
+  when "you"
+    output_word = "u"
+    puts "#{word} was changed to #{output_word}."
+  when "at"
+    output_word = "@"
+    puts "#{word} was changed to #{output_word}."
+  when "and"
+    output_word = "&"
+    puts "#{word} was changed to #{output_word}."
+  end
+  output_word
 end
