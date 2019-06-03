@@ -73,14 +73,14 @@ def word_substituter(tweet)
   finishedTweet
 end
 
-def bulk_tweet_shortener(mulitiTweetArray)
-  mulitiTweetArray.each do |tweet|
+def bulk_tweet_shortener(multiTweetArray)
+  multiTweetArray.each do |tweet|
     puts word_substituter(tweet)
   end
 end
 
-def selective_tweet_shortener(mulitiTweetArray)
-  mulitiTweetArray.each do |tweet|
+def selective_tweet_shortener(multiTweetArray)
+  multiTweetArray.map do |tweet|
     if tweet.length > 139
       puts word_substituter(tweet)
     else
@@ -89,8 +89,8 @@ def selective_tweet_shortener(mulitiTweetArray)
   end
 end
 
-def shortened_tweet_truncator(mulitiTweetArray)
-  mulitiTweetArray.each do |tweet|
+def shortened_tweet_truncator(multiTweetArray)
+  multiTweetArray.map do |tweet|
     if tweet.length > 139
       shortenedTweet = word_substituter(tweet)
       if shortenedTweet.length > 139
