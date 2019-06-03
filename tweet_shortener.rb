@@ -78,3 +78,13 @@ def bulk_tweet_shortener(mulitiTweetArray)
     puts word_substituter(tweet)
   end
 end
+
+def selective_tweet_shortener(mulitiTweetArray)
+    mulitiTweetArray.each do |tweet|
+      if tweet.length > 139
+        puts word_substituter(tweet)
+      else
+        puts tweet
+      end
+    end
+end
