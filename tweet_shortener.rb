@@ -94,8 +94,9 @@ def shortened_tweet_truncator(mulitiTweetArray)
     if tweet.length > 139
       shortenedTweet = word_substituter(tweet)
       if shortenedTweet.length > 139
-        shortenedTweet = shortenedTweet[0..137] + "..."
+        shortenedTweet = shortenedTweet[0..136] + "..."
       end
+      puts shortenedTweet
     else
       puts tweet
     end
