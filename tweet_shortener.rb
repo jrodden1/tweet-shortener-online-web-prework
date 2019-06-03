@@ -80,11 +80,15 @@ def bulk_tweet_shortener(mulitiTweetArray)
 end
 
 def selective_tweet_shortener(mulitiTweetArray)
-    mulitiTweetArray.each do |tweet|
-      if tweet.length > 139
-        puts word_substituter(tweet)
-      else
-        puts tweet
-      end
+  mulitiTweetArray.each do |tweet|
+    if tweet.length > 139
+      puts word_substituter(tweet)
+    else
+      puts tweet
     end
+  end
+end
+
+def shortened_tweet_truncator(mulitiTweetArray)
+
 end
