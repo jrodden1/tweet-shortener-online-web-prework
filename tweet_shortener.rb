@@ -99,4 +99,3 @@ def shortened_tweet_truncator(multiTweetArray)
   end
 outputTweet
 end
-
