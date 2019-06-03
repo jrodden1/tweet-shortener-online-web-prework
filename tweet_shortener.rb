@@ -81,7 +81,7 @@ end
 
 def selective_tweet_shortener(singleTweet)
     if singleTweet.length > 139
-      outputTweet = word_substituter(tweet)
+      outputTweet = word_substituter(singleTweet)
     else
       outputTweet = singleTweet
     end
